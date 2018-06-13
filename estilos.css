@@ -1,0 +1,297 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+}
+.portada{
+	background: #FFFFFF;
+	max-width: 1000px;
+	overflow: hidden;
+	margin:  auto;
+	width: 95%;
+}
+/*BARRA DE MENU*/
+.menu{
+	display: none;
+}
+header{
+	width: 100%;
+	margin-top: 150px;
+}
+header nav{
+	background: #152CBB;
+	z-index: 1000;
+	max-width: 1000px;
+	width: 100%;
+	margin: 5px auto;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+	display: inline-block;
+	position: relative;
+}
+header nav ul li:hover{
+	background:#E6344A; 
+}
+header nav ul li a{
+	color: #FFFFFF;
+	display: block;
+	font-family: "Verdana";
+	text-decoration: none;
+	padding: 10px;
+}
+header nav ul li a span{
+	margin-right:10px;
+}
+/*NOSOTROS*/
+header nav ul li:hover .submenu_nosotros{
+	display:block;
+}
+header nav ul li .submenu_nosotros{
+	display: none;
+	background:#2852B7;
+	position: absolute; 
+	width: 170%;
+	z-index: 1000;
+}
+header nav ul li .submenu_nosotros li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);/* trnparencia de color blanco al 50*/
+}
+header nav ul li .submenu_nosotros li a{
+	display: block;
+}
+/*CARRERAS*/
+header nav ul li:hover .submenu_carreras{
+	display:block;
+}
+header nav ul li .submenu_carreras{
+	display: none;
+	background:#284EA9;
+	position: absolute; 
+	width: 150%;
+	z-index: 1000;
+}
+header nav ul li .submenu_carreras li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);/* trnparencia de color blanco al 50*/
+}
+header nav ul li .submenu_carreras li a{
+	display: block;
+}
+/*sub menu en forma responsive*/
+@media screen and (max-width: 600px){
+	body{
+		padding-top: 80px
+	}
+    .menu{
+    	font-family: "Verdana";
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background: #E6344A;
+
+	}
+	.menu .bt-menu{
+		display: block;
+		padding: 20px;
+		color: #FFFFFF;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration:none;
+	}
+	.menu span{
+		float:right;
+		font-size: 40px;
+	}
+	header nav{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		right: 100%;
+		margin: 0;
+		overflow: scroll;
+	}
+	header nav ul li {
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	header nav ul li a{
+		display: block;
+	}
+	header nav ul li .submenu_nosotros{
+		width: 100%;
+		position: relative;
+	}
+	/*header nav ul li:hover .submenu_nosotros{
+		display: none;
+	}*/
+	header nav ul li .submenu_nosotros li a{
+		margin-left: 20px;ma
+	}
+}
+/*DIV ACTIVIDADES*/
+.actividades{
+	background: #E6344A;
+	width: 240px;
+	height: 400px;
+	float: left;
+	border-radius: 5px;
+
+}
+.actividades p{
+	font-color: #ffffff;
+}
+/*ANIMACION*/
+.animacion{
+	width: 750px;
+	height: 400px;
+	float: left;
+	background: #F2580B;
+	overflow: hidden;
+	float: right;
+
+}
+.animacion ul{
+	display: flex;
+	padding: 0px;
+	width: 300%;
+	animation: movimientook 10s infinite;
+}
+.animacion li{
+	width: 100%;
+	list-style: none;
+}
+.animacion img{
+	width: 750px;
+	height: 400px;
+}
+@keyframes movimientook {
+	0%   {margin-left: 0%;}
+	15%  {margin-left: 0%;}
+	20%  {margin-left: -100%;}
+	40%  {margin-left: -100%;}
+	50%  {margin-left: -200%;}
+	70%  {margin-left: -200%;}
+	75%  {margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+/*ENCABEZADO*/
+.logo_me img{
+	width: 270px;
+	height:60px;
+
+}
+.logo_cetpro img{
+	width: 140px;
+	height:140px;
+}
+.nombre{
+	float: left;
+	height: 120px;
+	width: 400px;
+	font-family: "Thimes Roman";
+	font-size: 30px;
+}
+.logo_me{
+	height: 100px;
+	width: 300px;
+	float: left;
+}
+.logo_cetpro{
+	height: 100px;
+	width: 300px;
+	float: right;
+}
+/*CONVENIOS*/
+.convenios{
+	width: 1000px;
+	height: 150px;
+	float: left;
+	margin-top: 20px;
+}
+/*DIRECCION*/
+.direccion{
+	width: 1000px;
+	height: 180px;
+	float: left;
+	background: #2A2A2C;
+}
+/*RESEÑA*/
+.reseña{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.fachada{
+	float: right;
+	margin: 10px;
+}
+/*MISION*/
+.mision{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.mision_img{
+	float: right;
+	margin: 10px;
+}
+/*ESTETICA*/
+.estetica{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.estetica_img{
+	float: right;
+	margin: 10px;
+}
+/*ARTEZANIA*/
+.artezania{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.artezania_img{
+	float: right;
+	margin: 10px;
+}
+/*HOTELERIA*/
+.hoteleria{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.hoteleria_img{
+	float: right;
+	margin: 10px;
+}
+/*TEXTIL*/
+.textil{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.textil_img{
+	float: right;
+	margin: 10px;
+}
+/*DANZA*/
+.danzas{
+	float: left;
+	width: 600px;
+	height: 400px;
+}
+.danzas_img{
+	float: right;
+	margin: 10px;
+}
